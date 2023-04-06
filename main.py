@@ -5,7 +5,8 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.debug = True
-app.config['SECRET_KEY'] = 'my_personal_crsf_token'  
+# The secret key is needed to keep the client-side sessions secure.
+app.config['SECRET_KEY'] = 'any_string_you_want'  
 csrf = CSRFProtect(app) 
 bootstrap = Bootstrap(app)
 
