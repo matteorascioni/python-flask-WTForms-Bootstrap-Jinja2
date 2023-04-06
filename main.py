@@ -1,7 +1,6 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template
 from flask_wtf.csrf import CSRFProtect
 from login_form import LoginForm
-from email_validator import validate_email
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
